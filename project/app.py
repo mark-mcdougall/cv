@@ -2,7 +2,7 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
-# SET PATH
+# SET PATH (RELATIVE TO app.py)
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
@@ -12,7 +12,7 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 PAGE_TITLE = "CV | Mark McDougall"
 PAGE_ICON = "📊"
 NAME = "Mark McDougall"
-DESCRIPTION = "Data Analyst based in Edinburgh with 8 years of experience, 3 years working remotely with international teams in multiple timezones."
+DESCRIPTION = "Data Analyst, assisting businesses in making data-driven decisions."
 
 EMAIL= "mark.mcdougall@hotmail.co.uk"
 SOCIAL_MEDIA = {
@@ -51,7 +51,7 @@ with col2:
     st.write("📧", EMAIL)
 
 # SOCIAL MEDIA
-st.write("#")
+st.write("#") # ADD SPACE
 cols = st.columns(len(SOCIAL_MEDIA))
 for col, (name, link) in zip(cols, SOCIAL_MEDIA.items()):    
     col.write(f"[{name}]({link})")
@@ -62,10 +62,9 @@ st.subheader("Experience and Qualifications")
 st.write(
     """
     - 8 years experience extracting actionable insights from data
-    - Creation and management of data pipelines in Python and SQL
-    - Data visualisation and dashboarding in Python
-    - Geospatial data analysis and mapping in Python
+    - Strong knowledge and hands-on experience in data analysis using Python and SQL
     - 3 years experience working remotely with international teams in multiple timezones
+    - Experience leading projects in an agile environment and mentoring junior team members
     """
 )
 
@@ -74,11 +73,11 @@ st.write("#")
 st.subheader("Skills")
 st.write(
     """
-    - Data Analysis: Python (Pandas, Numpy), SQL
+    - Data Analysis: Python (Pandas, Numpy, Scikit-learn), SQL
     - Data Visualisation: Python (Holoviz, Plotly, hvplot, Panel, Matplotlib, Seaborn)
     - Geospatial Data Analysis and Mapping: Python (GeoPandas, Geoviews, Shapely, Cartopy)
     - Data Pipelines: Python (Pandas, Numpy, SQLAlchemy, Requests), SQL
-    - Databases: PostgreSQL, SQLite, MS SQL
+    - Databases: PostgreSQL, SQLite, MS SQL Server
     - Containerisation: Docker
     - Version Control: Git, GitHub
     - Agile: Jira, Confluence
@@ -86,11 +85,63 @@ st.write(
     """
 )
 
+# WORK HISTORY 
+st.write("#")
+st.subheader("Work History")
+st.write("---") # ADD LINE BREAK
+
+# JOB 1
+st.write("**Data Analyst | S and P Global Platts**")
+st.write("September 2021 - March 2023")
+st.write(
+    """
+    * Supported two development teams in the migration of approximately 150 datasets to DataBricks through end-to-end analysis of existing dataflows
+    * Used Python, SQL and DataBricks to produce an automated, twice daily email report that alerted the Data Collections team to any issues with datasets missing data
+    * Produced a workflow in Python that allowed external customers to access and process data using an api
+    * Performed software releases of the BAU team’s data fixes to the Production environment
+    * Greatly improved the onboarding of new BAU team members by identifying current processes and writing documentation
+    """
+)
+
+# JOB 2
+st.write("**Data Analyst | B and PO**")
+st.write("April 2019 - March 2021")
+st.write(
+    """
+    * Delivered bespoke analytics reports for multinational, household name clients
+    * Produced interactive presales reports to assist the sales team in winning new business
+    * Delivered a new geospatial analytics method that resulted in multiple new clients and tens of thousands of pounds in revenue
+    * Sourced, cleaned and transformed freely available online datasets from multiple reputable sources to produce richer, original datasets with actionable business value, saving my employer tens of thousands annually in data costs
+    """
+)
+
+# JOB 3
+st.write("**Data Analyst | Adapptive**")
+st.write("April 2017 - April 2019")
+st.write(
+    """
+    * In collaboration with four developers, led the successful delivery of multiple new features and the full redesign of the existing functionality of the Adapptive advertising software product
+    * Produced mock data datasets to enable the development, testing and demonstration of new software features
+    * Managed a team of four developers and a data analyst when my boss was frequently working remotely at another office
+    * Recruited, trained and mentored a new data analyst
+    """
+)
+
+# JOB 4
+st.write("**Data Analyst | Red Fox Media**")
+st.write("January 2015 - April 2017")
+st.write(
+    """
+    * Designed, trafficked, managed and optimized ad campaigns, including the production of customer data segments
+    * Cleaned, processed, updated and managed client data files and third-party data sources
+    """
+)
+
 # PROJECTS
 st.write("#")
 st.subheader("Projects")
-cols = st.columns(len(PROJECTS))
-for col, (name, link) in zip(cols, PROJECTS.items()):
-    col.write(f"[{name}]({link})")
+st.write("---") 
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
 
 
