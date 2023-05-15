@@ -69,3 +69,28 @@ st.write(
     """
 )
 
+# SKILLS
+st.write("#")
+st.subheader("Skills")
+st.write(
+    """
+    - Data Analysis: Python (Pandas, Numpy), SQL
+    - Data Visualisation: Python (Holoviz, Plotly, hvplot, Panel, Matplotlib, Seaborn)
+    - Geospatial Data Analysis and Mapping: Python (GeoPandas, Geoviews, Shapely, Cartopy)
+    - Data Pipelines: Python (Pandas, Numpy, SQLAlchemy, Requests), SQL
+    - Databases: PostgreSQL, SQLite, MS SQL
+    - Containerisation: Docker
+    - Version Control: Git, GitHub
+    - Agile: Jira, Confluence
+    - Customer Interaction: Salesforce
+    """
+)
+
+# PROJECTS
+st.write("#")
+st.subheader("Projects")
+cols = st.columns(len(PROJECTS))
+for col, (name, link) in zip(cols, PROJECTS.items()):
+    col.write(f"[{name}]({link})")
+
+
