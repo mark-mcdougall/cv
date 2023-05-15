@@ -46,4 +46,4 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Run streamlit
-CMD streamlit run project/app.py --server.enableCORS false
+CMD streamlit run project/app.py
