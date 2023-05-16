@@ -21,7 +21,8 @@ SOCIAL_MEDIA = {
 }
 
 PROJECTS = {
-    "🌎 Administrative Geography to Postcode Conversion, Data Augmentation and Mapping": "https://github.com/mark-mcdougall/data_analytics/blob/main/projects/geo_projects/mapping/Admim_geo_to_postcode_data_aumentation_and_mapping.ipynb"
+    "🌎 Administrative Geography to Postcode Conversion, Data Augmentation and Mapping": "https://github.com/mark-mcdougall/data_analytics/blob/main/projects/geo_projects/mapping/Admim_geo_to_postcode_data_aumentation_and_mapping.ipynb",
+    "📄 CV": "https://github.com/mark-mcdougall/cv"
 }
 
 # PAGE TITLE AND FAVICON
@@ -63,7 +64,7 @@ st.write(
     """
     - 8 years experience extracting actionable insights from data
     - Strong knowledge and hands-on experience in data analysis using Python and SQL
-    - 3 years experience working remotely with international teams in multiple timezones
+    - 3 years experience working remotely with international teams in multiple time zones
     - Experience leading projects in an agile environment and mentoring junior team members
     """
 )
