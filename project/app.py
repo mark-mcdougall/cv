@@ -66,6 +66,8 @@ st.write(
     - ✅ Strong knowledge and hands-on experience in data analysis using Python and SQL
     - ✅ Experience leading projects in an agile environment and mentoring junior team members
     - ✅ 3 years experience working remotely with international teams in multiple time zones
+    - ✅ Business IT MSC from Edinburgh Napier University. Distinction and Class Medal winner
+    - ✅ MCHEM Chemistry with Industrial Experience from the University of Edinburgh
     """
 )
 
@@ -77,7 +79,7 @@ st.write(
     - 🧮 Data Analysis: Python (Pandas, Pandas API on Spark, Scikit-learn), SQL
     - 📊 Data Visualisation: Python (Holoviz, Plotly, hvplot, Panel, Matplotlib, Seaborn)
     - 🗺️ Geospatial Data Analysis and Mapping: Python (GeoPandas, Geoviews, Shapely, Cartopy)
-    - ➖ Data Pipelines: Python (Pandas, Numpy, SQLAlchemy, Requests), SQL
+    - ➖ Data Pipelines: Python (Pandas, SQLAlchemy, Requests), SQL
     - 🗄️ Databases: PostgreSQL, SQLite, MS SQL Server
     - ⭕ Containerisation: Docker
     - ⭕ Version Control: Git, GitHub
